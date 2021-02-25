@@ -24,10 +24,14 @@ export const Bio = () => (
               />
               <div className="author-name">
                 <span className="author-name-prefix">Written by</span>
-                <Link to={'/about'} className="author-name-content">
+                <Link  className="author-name-content">
                   <span>@{author}</span>
                 </Link>
-                <div className="author-introduction">{introduction}</div>
+                <div className="author-introduction">{introduction} 
+                  <br/>
+                  <br/>
+                  <a href="https://call203.tistory.com/" style={{color:"#000080", fontWeight:"900" ,fontSize:"1rem"}}> 전 블로그 가기 </a>
+                </div>
                 <p className="author-socials">
                   {social.github && (
                     <a href={`https://github.com/${social.github}`}>GitHub</a>
